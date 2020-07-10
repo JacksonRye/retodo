@@ -1,0 +1,11 @@
+@import "config";
+@import "add-to-do";
+@import "todo-category-grid";
+@import "todo-category-item";
+@import "todo-list";
+@import "todo-item";
+@import "new-todo";
+
+body {
+    background: $primary-color;
+}

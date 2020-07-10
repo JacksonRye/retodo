@@ -1,0 +1,68 @@
+.new-todo {
+  form {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin: 0 1rem 1rem 1rem;
+
+    .head {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 1rem 0;
+
+      h1 {
+        text-align: center;
+        flex: 1;
+      }
+
+      p {
+        margin: 0 1rem 0 0;
+      }
+    }
+
+    #note,
+    #category {
+      height: 8vh;
+    }
+
+    #todo {
+      margin: 1rem 0;
+    }
+
+    #note,
+    #category,
+    #date,
+    textarea {
+      border: none;
+      border-bottom: solid 0.5px rgba(0, 0, 0, 0.356);
+    }
+
+    textarea {
+      height: 20vh;
+    }
+
+    #create-btn {
+      height: 10vh;
+      border: none;
+      background: $secondary-color;
+      color: $primary-color;
+    }
+
+    #date {
+      height: 8vh;
+      margin: 0.5rem 0 0 0;
+      width: 100%;
+    }
+
+    #date,
+    #category {
+      appearance: none;
+      background: $text-color;
+    }
+
+    #category {
+      margin: 0.5rem 0;
+    }
+  }
+}

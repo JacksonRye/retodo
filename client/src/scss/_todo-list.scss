@@ -1,0 +1,21 @@
+.container {
+  background: $secondary-color;
+  .behind {
+    .navigation {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    color: $primary-color;
+    padding: 1rem 1rem 1rem 1rem;
+    z-index: -1;
+  }
+
+  .front {
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    background: $primary-color;
+
+    padding: 1rem 1rem 2rem 2rem;
+  }
+}
