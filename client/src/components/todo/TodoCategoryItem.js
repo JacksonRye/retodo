@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { GlobalContext } from "../../context/GlobalState";
 
 const TodoCategoryItem = ({ category }) => {
+  // eslint-disable-next-line
   const { todos, getTodos } = useContext(GlobalContext);
 
   useEffect(() => {

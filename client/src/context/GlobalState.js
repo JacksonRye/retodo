@@ -53,17 +53,17 @@ export const GlobalProvider = ({ children }) => {
   // Actions
   async function getTodos(category) {
     try {
+      let payload;
       const res = await axios.get(`${apiUrl}`);
 
       const data = res.data.data;
 
       if (category.toLowerCase() !== "all") {
-        var payload = data.filter(
+        payload = data.filter(
           (todo) => todo.category.toLowerCase() === category.toLowerCase()
         );
-
       } else {
-        var payload = data;
+        payload = data;
       }
 
       dispatch({

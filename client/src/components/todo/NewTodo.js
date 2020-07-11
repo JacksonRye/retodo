@@ -33,13 +33,13 @@ const NewTodo = () => {
         <div className="head">
           <h1>New Todo</h1>
           <Link to="/">
-              <i className="fas fa-times"></i>
+            <i className="fas fa-times"></i>
           </Link>
-
         </div>
 
         <label htmlFor="todo">What are you planning?</label>
         <textarea
+          value={task}
           onChange={(e) => setTask(e.target.value)}
           type="text"
           id="todo"
@@ -48,11 +48,16 @@ const NewTodo = () => {
         <input
           onChange={(e) => formatDateTime(e.target.value)}
           id="date"
+          value={date}
           type="datetime-local"
         ></input>
         <input id="note" type="text" placeholder="Add note"></input>
 
-        <select onChange={(e) => setCategory(e.target.value)} id="category">
+        <select
+          value={category}
+          onChange={(e) => setCategory(e.target.value)}
+          id="category"
+        >
           {categories
             .filter((category) => category.category.toLowerCase() !== "all")
             .map((category, index) => (
