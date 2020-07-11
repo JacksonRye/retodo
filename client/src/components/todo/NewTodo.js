@@ -33,8 +33,9 @@ const NewTodo = () => {
         <div className="head">
           <h1>New Todo</h1>
           <Link to="/">
-            <i className="fas fa-times"></i>
+              <i className="fas fa-times"></i>
           </Link>
+
         </div>
 
         <label htmlFor="todo">What are you planning?</label>

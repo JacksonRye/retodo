@@ -5,6 +5,7 @@
   align-items: flex-start;
 
   background: $text-color;
+  color: darken($secondary-color, 7);
 
   .cat-icon {
       margin: 1rem;

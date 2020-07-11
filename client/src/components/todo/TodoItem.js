@@ -18,7 +18,7 @@ const TodoItem = ({ todo }) => {
         <p style={isCompleted ? { textDecoration: "line-through" } : null}>
           {todo.task}
         </p>
-        <p>12:00</p>
+        <p>{todo.date}</p>
       </div>
       <input
         onChange={() => changeIsCompleted(!isCompleted)}

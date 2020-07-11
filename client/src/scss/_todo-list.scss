@@ -18,4 +18,31 @@
 
     padding: 1rem 1rem 2rem 2rem;
   }
+
+  .fas {
+    color: $primary-color;
+  }
+
+  #back {
+    margin: 0 0.5rem;
+  }
+
+  #icon, #category, #tasks {
+    margin: 0 3rem;
+  }
+
+  #icon {
+    transform: scale(1.5);
+    border: white 1px solid;
+    background: white;
+    color: $secondary-color;
+    padding: 0.4rem 0.6rem;
+    border-radius: 50%;
+    margin: 1.5rem 3rem;
+
+  }
+
+  #tasks {
+    margin-bottom: 1rem;
+  }
 }

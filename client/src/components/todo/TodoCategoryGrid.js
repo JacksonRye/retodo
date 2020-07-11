@@ -8,7 +8,7 @@ const TodoCategoryGrid = () => {
 
   return (
     <>
-      <h1>Categories</h1>
+      <h1 id="header">Categories</h1>
 
       <div className="todo-category-grid">
         {categories.map((category) => (

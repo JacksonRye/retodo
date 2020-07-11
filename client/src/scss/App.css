@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Raleway&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -7,6 +8,23 @@
 
 a {
   text-decoration: none;
+}
+
+a:visited {
+  color: #000;
+}
+
+* {
+  font-family: "Raleway", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins", sans-serif;
 }
 
 .add-to-do {
@@ -25,8 +43,11 @@ a {
 
 .add-to-do .plus {
   height: 100%;
-  -webkit-transform: translate(10%, -45%);
-          transform: translate(10%, -45%);
+  -webkit-transform: scale(5);
+          transform: scale(5);
+  -webkit-transform: translate(0%, -60%);
+          transform: translate(0%, -60%);
+  color: #fcfcfc;
 }
 
 .todo-category-grid {
@@ -35,6 +56,12 @@ a {
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
   gap: 1rem;
+}
+
+#header {
+  margin: 1rem 0;
+  text-align: center;
+  font-weight: 900;
 }
 
 .todo-category-item {
@@ -52,6 +79,7 @@ a {
       -ms-flex-align: start;
           align-items: flex-start;
   background: #fff;
+  color: #385aff;
 }
 
 .todo-category-item .cat-icon {
@@ -90,6 +118,33 @@ a {
   border-top-left-radius: 20px;
   background: #fcfcfc;
   padding: 1rem 1rem 2rem 2rem;
+}
+
+.container .fas {
+  color: #fcfcfc;
+}
+
+.container #back {
+  margin: 0 0.5rem;
+}
+
+.container #icon, .container #category, .container #tasks {
+  margin: 0 3rem;
+}
+
+.container #icon {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+  border: white 1px solid;
+  background: white;
+  color: #5c78ff;
+  padding: 0.4rem 0.6rem;
+  border-radius: 50%;
+  margin: 1.5rem 3rem;
+}
+
+.container #tasks {
+  margin-bottom: 1rem;
 }
 
 .todo-item {
@@ -153,6 +208,11 @@ a {
 
 .new-todo form .head p {
   margin: 0 1rem 0 0;
+}
+
+.new-todo form .head .fa-times {
+  -webkit-transform: scale(2);
+          transform: scale(2);
 }
 
 .new-todo form #note,

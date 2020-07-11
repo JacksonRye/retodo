@@ -1,6 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Raleway&display=swap");
+
 $primary-color: rgb(252, 252, 252);
 $secondary-color: rgb(92, 120, 255);
 $text-color: #fff;
+$text-color-dark: #000;
+
+
+// TODO ANIMATIONS
 
 * {
   padding: 0;
@@ -10,4 +16,29 @@ $text-color: #fff;
 
 a {
   text-decoration: none;
+}
+
+a:visited {
+  color: $text-color-dark;
+}
+
+* {
+  font-family: "Raleway", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins", sans-serif;
+}
+
+@function set-text-color($color) {
+  @if (lightness($color) > 40) {
+    @return black;
+  } @else {
+    @return white;
+  }
 }

@@ -9,11 +9,9 @@ const TodoCategoryItem = ({ category }) => {
     getTodos("all");
   }, []);
 
-
   const tasks = todos.filter(
     (todo) => todo.category.toLowerCase() === category.category.toLowerCase()
   );
-
 
   return (
     <div>
@@ -22,7 +20,9 @@ const TodoCategoryItem = ({ category }) => {
           <h1 className="cat-icon">
             <i className={category.icon}></i>
           </h1>
-          <div className="task-name">{category.category}</div>
+          <div className="task-name">
+            <h3>{category.category}</h3>
+          </div>
           <div className="task-no">
             {category.category.toLowerCase() === "all"
               ? todos.length

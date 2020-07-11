@@ -9,9 +9,9 @@ const TodoList = ({ match }) => {
 
   const { category } = match.params;
 
-  const icon = categories.find(
-    (category) => category.category.toLowerCase() === category.category.toLowerCase()
-  ).icon;
+  const icon = categories.find((cat) => cat.category === category).icon;
+
+
 
   useEffect(() => {
     getTodos(category);
@@ -25,15 +25,15 @@ const TodoList = ({ match }) => {
         <div className="navigation">
           <Link to="/">
             <h1>
-              <i className="fas fa-chevron-left"></i>
+              <i id="back" className="fas fa-chevron-left"></i>
             </h1>
           </Link>
         </div>
         <h3>
-          <i className={icon}></i>
+          <i id="icon" className={icon}></i>
         </h3>
-        <h1>{category}</h1>
-        <p>{todos.length} Tasks</p>
+        <h1 id="category">{category}</h1>
+        <p id="tasks">{todos.length} Tasks</p>
       </div>
 
       <div className="front">
